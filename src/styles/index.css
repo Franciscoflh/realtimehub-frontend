@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: 'Inter', sans-serif;
+  background: #0c0e11;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top right, rgba(89, 140, 255, 0.08), transparent 25%),
+    #0c0e11;
+  color: #eef2ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(159, 168, 189, 0.18);
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.glass-panel {
+  background: rgba(51, 54, 58, 0.7);
+  backdrop-filter: blur(24px);
+}
+
+.ghost-border {
+  border: 1px solid rgba(179, 188, 204, 0.15);
+}
