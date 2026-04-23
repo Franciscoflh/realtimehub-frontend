@@ -22,16 +22,16 @@ export function UserSearch({
         <input
           value={query}
           onChange={(event) => onQueryChange(event.target.value)}
-          placeholder="Buscar usuários ou conversas..."
+          placeholder="Buscar usuarios ou conversas..."
           className="w-full bg-transparent text-sm text-onSurface outline-none placeholder:text-onSurfaceSoft"
         />
       </div>
 
       {query.trim() ? (
         <div className="glass-panel ghost-border max-h-72 overflow-y-auto rounded-[24px] p-2 shadow-ambient">
-          {searching ? <p className="px-3 py-4 text-sm text-onSurfaceMuted">Buscando usuários...</p> : null}
+          {searching ? <p className="px-3 py-4 text-sm text-onSurfaceMuted">Buscando usuarios...</p> : null}
           {!searching && !results.length ? (
-            <p className="px-3 py-4 text-sm text-onSurfaceMuted">Nenhum usuário encontrado.</p>
+            <p className="px-3 py-4 text-sm text-onSurfaceMuted">Nenhum usuario encontrado.</p>
           ) : null}
           {results.map((user) => (
             <button
@@ -42,7 +42,7 @@ export function UserSearch({
               <Avatar name={user.name} src={user.avatarUrl} className="h-10 w-10" />
               <div className="min-w-0 flex-1">
                 <p className="truncate text-sm font-semibold text-onSurface">{user.name}</p>
-                <p className="truncate text-xs text-onSurfaceMuted">{user.email}</p>
+                <p className="truncate text-xs text-onSurfaceMuted">ID {String(user.id).slice(0, 8)}</p>
               </div>
               <UserPlus2 className="h-4 w-4 text-primary" />
             </button>

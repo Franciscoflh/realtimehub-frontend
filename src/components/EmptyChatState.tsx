@@ -12,7 +12,7 @@ export function EmptyChatState() {
         Selecione uma conversa
       </h2>
       <p className="mt-4 max-w-xl text-lg leading-8 text-onSurfaceMuted">
-        Escolha um chat na lateral para começar.
+        Escolha um chat na lateral para comecar.
       </p>
     </div>
   );

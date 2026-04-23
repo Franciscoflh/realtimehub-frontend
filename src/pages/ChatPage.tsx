@@ -160,7 +160,7 @@ export function ChatPage() {
       sidebar={
         <Sidebar
           onOpenSearch={() => {
-            const input = document.querySelector<HTMLInputElement>('input[placeholder="Buscar usuários ou conversas..."]');
+            const input = document.querySelector<HTMLInputElement>('input[placeholder="Buscar usuarios ou conversas..."]');
             input?.focus();
           }}
           search={
@@ -185,7 +185,7 @@ export function ChatPage() {
             <div className="flex items-center justify-between rounded-[26px] bg-surface px-4 py-3">
               <div className="min-w-0">
                 <div className="flex items-center gap-2">
-                  <p className="truncate font-semibold text-onSurface">{user?.name ?? 'Usuário'}</p>
+                  <p className="truncate font-semibold text-onSurface">{user?.name ?? 'Usuario'}</p>
                   <OnlineIndicator online={websocketConnected} />
                 </div>
                 <p className="truncate text-sm text-onSurfaceMuted">

@@ -32,7 +32,7 @@ export function AuthForm({ mode, values, loading, error, onChange, onSubmit }: A
           value={values.email ?? ''}
           onChange={(event) => onChange('email', event.target.value)}
           className="w-full rounded-2xl bg-background px-4 py-4 text-onSurface outline-none transition focus:shadow-[inset_0_-2px_0_0_#598cff]"
-          placeholder="voce@email.com"
+          placeholder="voce@empresa.com"
         />
       </label>
 
@@ -43,7 +43,7 @@ export function AuthForm({ mode, values, loading, error, onChange, onSubmit }: A
           value={values.password ?? ''}
           onChange={(event) => onChange('password', event.target.value)}
           className="w-full rounded-2xl bg-background px-4 py-4 text-onSurface outline-none transition focus:shadow-[inset_0_-2px_0_0_#598cff]"
-          placeholder="••••••••"
+          placeholder="********"
         />
       </label>
 

@@ -67,7 +67,7 @@ export function ChatList({
         <MessageSquareText className="h-12 w-12 text-primary/70" />
         <p className="mt-4 font-display text-2xl font-bold text-onSurface">Nada por aqui ainda</p>
         <p className="mt-2 max-w-xs text-sm leading-6 text-onSurfaceMuted">
-          Busque um usuário e inicie a primeira conversa do seu workspace em tempo real.
+          Busque um usuario e inicie a primeira conversa do seu workspace em tempo real.
         </p>
       </div>
     );
@@ -79,7 +79,6 @@ export function ChatList({
         const participant = getChatCounterpart(chat, currentUserId) ?? ({
           id: chat.id,
           name: 'Chat',
-          email: '',
         } as User);
 
         return (

@@ -98,7 +98,7 @@ export function ChatWindow({
               <MessageBubble
                 key={message.id}
                 message={message}
-                isOwn={message.sender.id === currentUser?.id || message.sender.email === currentUser?.email}
+                isOwn={message.sender.id === currentUser?.id}
               />
             ))
           : null}
@@ -113,7 +113,7 @@ export function ChatWindow({
             disabled={sending || !connected}
           />
           <p className="mt-3 text-center text-xs uppercase tracking-[0.2em] text-onSurfaceSoft">
-            {connected ? 'Mensagens protegidas e sincronizadas em tempo real' : 'Tentando restabelecer a conexão'}
+            {connected ? 'Mensagens protegidas e sincronizadas em tempo real' : 'Tentando restabelecer a conexao'}
           </p>
         </div>
       </footer>

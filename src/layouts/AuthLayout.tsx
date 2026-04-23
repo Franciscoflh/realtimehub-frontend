@@ -10,7 +10,7 @@ export function AuthLayout({
   children: ReactNode;
 }) {
   return (
-    <div className="min-h-screen bg-hero-radial px-4 py-8 text-onSurface justify-center">
+    <div className="min-h-screen justify-center bg-hero-radial px-4 py-8 text-onSurface">
       <div className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-6xl overflow-hidden rounded-[32px] bg-surface shadow-ambient">
         <section className="hidden flex-1 flex-col justify-center bg-surfaceLow p-10 lg:flex">
           <div>
@@ -18,7 +18,7 @@ export function AuthLayout({
               Converse em tempo real com foco e privacidade.
             </h1>
             <p className="mt-5 max-w-md text-base leading-7 text-onSurfaceMuted">
-              Mensagens rápidas, seguras e sem distrações.
+              Mensagens rapidas, seguras e sem distracoes.
             </p>
           </div>
         </section>

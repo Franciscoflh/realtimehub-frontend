@@ -23,14 +23,14 @@ export function AuthPage({ mode }: { mode: 'login' | 'register' }) {
         ? {
             title: 'Acesse sua conta',
             subtitle: 'Entre para continuar suas conversas.',
-            footerLabel: 'Ainda não tem conta?',
+            footerLabel: 'Ainda nao tem conta?',
             footerAction: 'Criar conta',
             footerLink: '/register',
           }
         : {
             title: 'Criar sua conta',
-            subtitle: 'Comece a conversar em tempo real de forma rápida e segura.',
-            footerLabel: 'Já possui conta? ',
+            subtitle: 'Comece a conversar em tempo real de forma rapida e segura.',
+            footerLabel: 'Ja possui conta?',
             footerAction: 'Entrar',
             footerLink: '/login',
           },
@@ -59,8 +59,8 @@ export function AuthPage({ mode }: { mode: 'login' | 'register' }) {
     } catch (caughtError) {
       const message =
         caughtError instanceof AxiosError
-          ? caughtError.response?.data?.message ?? 'Não foi possível completar a autenticação.'
-          : 'Não foi possível completar a autenticação.';
+          ? caughtError.response?.data?.message ?? 'Nao foi possivel completar a autenticacao.'
+          : 'Nao foi possivel completar a autenticacao.';
       setError(message);
     }
   }
